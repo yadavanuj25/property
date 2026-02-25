@@ -16,27 +16,27 @@ import AdminDashboard from "../admin/pages/AdminDashboard";
 import Property from "../user/pages/Property";
 
 const AppRoutes = () => (
-  <Router>
-    <Routes>
-      {/* User routes */}
+  // <Router>
+  <Routes>
+    {/* User routes */}
 
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="properties" element={<Property />} />
-        <Route path="career" element={<Career />} />
-      </Route>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="properties" element={<Property />} />
+      <Route path="career" element={<Career />} />
+    </Route>
 
-      {/* Admin routes */}
+    {/* Admin routes */}
 
-      <Route path="/admin" element={<AdminLayout />}>
-        <Route index element={<AdminDashboard />} />
-        <Route path="login" element={<Login />} />
-        <Route path="view" element={<AdminView />} />
-        <Route path="add-property" element={<AddProperty />} />
-      </Route>
-    </Routes>
-  </Router>
+    <Route path="/admin" element={<AdminLayout />}>
+      <Route index element={<AdminDashboard />} />
+      <Route path="login" element={<Login />} />
+      <Route path="view" element={<AdminView />} />
+      <Route path="add-property" element={<AddProperty />} />
+    </Route>
+  </Routes>
+  // </Router>
 );
 
 export default AppRoutes;
